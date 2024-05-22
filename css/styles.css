@@ -672,7 +672,7 @@ aside .pages {
 
 @media only screen and (max-width: 690px) {
   .hero .container h1 {
-    font-size: 30px;
+    font-size: 25px !important;
     line-height: 30px;
     letter-spacing: 1.75px !important;
   }
@@ -799,6 +799,8 @@ aside .pages {
     width: 100px;
    
   }
+  .social-icon{
+    
 }
 
 @media only screen and (max-width: 690px) {
