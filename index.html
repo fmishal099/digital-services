@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Services Website</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- CS files links -->
+        <link rel="stylesheet" href="css/easy.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="Images/fave_icon.png"
+            type="image/x-icon">
+        <!-- Font owesome cdn -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!-- Header Start -->
+        <div class="site-wrapper">
+            <div class="header-section">
+                <header>
+                    <nav class="navbar">
+                        <a href="/" class="navbar-logo">
+                            <img
+                                src="Images/logo.png" class="site-logo" alt></a>
+                        <button onclick="openNav()" class="navbar-toggler"
+                            type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <ul class="navbar-menu">
+                            <li><a href="#"
+                                    class="nav-link active">Home</a></li>
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                            <li class="dropdown-toggle"><a href
+                                    class="nav-link">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"
+                                            class="dropdown-item">Services</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">Pricing
+                                            Plan</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">Portfolio</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">Team</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">Test</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">BLOG</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">FAQ</a></li>
+                                    <li><a href="#"
+                                            class="dropdown-item">Testimonial</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="header-right">
+                            <div class="header-call">
+                                <p>Call Us: <span class="number">+123 456
+                                        7890</span></p>
+                            </div>
+                            <div class="header-search">
+                                <i onclick="openSearch()"
+                                    class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                            <span id="openSidebarBtn" class="closebtn"><i
+                                    onclick="rightSidebar()"
+                                    class="fa-solid fa-bars"></i></span>
+
+                        </div>
+                    </nav>
+
+                    <aside class="sidepanel" id="sidepanel1">
+                        <div class="sidebar">
+                            <a href><img src="Images/logo.png" alt></a>
+                            <button onclick="closeNav()" class="closebtn"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <!-- side menu -->
+                        <ul>
+                            <li><a href="/" class="nav-link">Home</a></li>
+                            <li><a href class="nav-link ">About</a></li>
+                            <li><a href class="nav-link">Contact</a></li>
+                            <div class="plus">
+                                <li class="pages"><a href
+                                        class="nav-link">More</a></li>
+                                <li class="collapse-btn">
+                                    <a href class="nav-link plus-collapse"
+                                        data-bs-toggle="collapse"><i
+                                            class="fa-solid fa-plus"></i></a></div>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a href="#"
+                                                class="nav-link">Services</a></li>
+                                        <li><a href="#" class="nav-link">Pricing
+                                                Plan</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">Portfolio</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">Team</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">Test</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">BLOG</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">FAQ</a></li>
+                                        <li><a href="#"
+                                                class="nav-link">Testimonial</a></li>
+                                    </ul>
+
+                                </div>
+                            </li></ul>
+                        </ul>
+                    </aside>
+                    <div id="search">
+                        <form action="#" method="search">
+                            <input type="search" required
+                                placeholder="search...">
+                            <button type="submit" class="btn2">SEARCH</button>
+                        </form>
+                        <i onclick="closeSearch()"
+                            class="fa-solid fa-xmark close-btn"></i>
+                    </div>
+
+                    <section class="right-sidebar" id="right-sidebar">
+                        <div class="sidetoside">
+                            <img class="logos" src="Images/right-side-logo.png" alt>
+                            <a href="#" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                        <button class="btn3">Discover More</button>
+                        <span class="line"><hr></span>
+                        <h2>Connected details:</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i><span>+123-456-7890</span></li>
+                            <li><i class="fa-solid fa-envelope"></i><span>Yourname@Email.Com</span></li>
+                            <li><i class="fa-solid fa-clock"></i><span>Office Hours: 8AM - 11PM Sunday<br> - Weekend Day</span></li>
+                        </ul>
+                        <span class="social-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </section>
+                    
+                    
+
+                </header>
+            </div>
+            <!-- Header END  -->
+
+            <!-- Hero Section start -->
+            <div class="hero">
+                <div class="container" data-aos="zoom-in">
+                    <div class="hero-social">
+                        <a href><i class="fa-brands fa-facebook"></i></a>
+                        <a href><i class="fa-brands fa-instagram"></i></a>
+                        <a href><i class="fa-brands fa-twitter"></i></a>
+                        <hr>
+                    </div>
+                    <div class="text-center">
+                        <h1>DIGITAL SERVICES
+                        </h1>
+                        <h3>
+                            BUILDING YOUR EMPIRE DIGITALLY
+
+                        </h3>
+                        <div class="two-button">
+                            <button class="start-btn">Get Started</button>
+                            <button class="more-btn">Discover More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Section End -->
+            <!-- CARD Section start -->
+            <div class="feature">
+                <div class="container">
+                    <div class="head">
+                        <div class="header-card" data-aos="fade-up">
+                            <img src="Images/icon/feature1.png"
+                                    alt>
+                            <h3>CUSTOMIZED SOLUTIONS</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.</p>
+                        </div>
+                        <div class="header-card" data-aos="fade-down">
+                            <img src="Images/icon/feature2.png"
+                                    alt>
+                            <h3>ROI-DRIVEN APPROACH</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.</p>
+                        </div>
+                        <div class="header-card" data-aos="fade-up">
+                           <img src="Images/icon/feature3.png"
+                                    alt>
+                            <h3>CREATIVE SOLUTION</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.</p>
+                        </div>
+                        <div class="header-card" data-aos="fade-down">
+                            <img src="Images/icon/feature4.png"
+                                    alt>
+                            <h3>EXPERT TEAM</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="logo-sect">
+                    <div class="container">
+                        <div class="logos-section clients-logo">
+                            <hr class="hr1">
+                            <h4 class="client" data-aos="zoom-in">OUR CLIENTS</h4>
+                        </div>
+                        <div class="logoipsum-slider" data-aos="zoom-in">
+                            <figure><img src="Images/home/logoipsum1.svg"
+                                    alt></figure>
+                            <figure><img src="Images/home/logoipsum2.svg"
+                                    alt></figure>
+                            <figure><img src="Images/home/logoipsum3.svg"
+                                    alt></figure>
+                            <figure><img src="Images/home/logoipsum4.svg"
+                                    alt></figure>
+                            <figure><img src="Images/home/logoipsum5.svg"
+                                    alt></figure>
+                            <figure><img src="Images/home/logoipsum6.svg"
+                                    alt></figure>
+                        </div>
+                        <div class="hrr"><hr class="hr2"></div>
+
+                    </div>
+                </section>
+            </div>
+             <!-- About Section start -->
+            <section class="about-section">
+                <div class="container">
+                    <div class="about-data" data-aos="fade-up">
+                        <div class="about-title">
+                            <hr>
+                            <h5>ABOUT US</h5>
+
+                        </div>
+
+                        <h2>Explore Our Services And Boost Your Online Presence
+                        </h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap
+                            into electronic typesetting, remaining essentially
+                            unchanged.
+
+                        </p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i><span>Lorem
+                                    Ipsum is simply dummy text of the
+                                    printing.</span>
+                            </li>
+                            <li><i class="fa-solid fa-check"></i><span>Lorem
+                                    Ipsum is simply dummy text of the
+                                    printing.</span>
+                            </li>
+                        </ul>
+                        <div class="two-buttons">
+                            <button class="start-btn">Get Started</button>
+                            <button class="more-btn">Discover More</button>
+                        </div>
+
+                    </div>
+                    <div class="img" data-aos="fade-down">
+                        <div class="image-side">
+                            <figure>
+                                <img src="Images/home/about.png" alt>
+                            </figure>
+                        </div>
+                        <div class="counter">
+                            <div class="ab-count">
+                                <h2 class="plus-year">12 <span
+                                        class="plus-year">+</span></h2>
+                            </div>
+                            <p class="plus-year">year of experience</p>
+                        </div>
+
+                        <div class="who-section">
+                            <div class="about-hr">
+                                <hr>
+                                <h6>who we are</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- Portfolio Section start -->
+            <section class="portfolio">
+                <div class="container-1"  data-aos="fade-up">
+                    <div class="portfolio-data">
+                        <div class="portfolio-title">
+                            <div class="port-flex">
+                                <hr>
+                                <h5>PORTFOLIO
+                                </h5>
+                            </div>
+
+                            <h2>Our Latest Projects.
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <button class="btn-project">View All Projects</button>
+                    </div>
+
+                </div>
+                <hr class="bottom-hr">
+
+            </section>
+            <!-- Gallery section -->
+
+            <div class="gallery">
+                <div class="container-2" data-aos="fade-up">
+                    <div class="table">
+                        <button class="tablinks active"
+                            onclick="filterImages('all')">ALL</button>
+                        <button class="tablinks "
+                            onclick="filterImages('design')">DESIGN</button>
+                        <button class="tablinks"
+                            onclick="filterImages('development')">DEVELOPMENT</button>
+                        <button class="tablinks"
+                            onclick="filterImages('uiux')">UI/UX</button>
+                        <button class="tablinks"
+                            onclick="filterImages('branding')">BRANDING</button>
+                        <button class="tablinks"
+                            onclick="filterImages('marketing')">MARKETING</button>
+                        <button class="tablinks"
+                            onclick="filterImages('seo')">SEO</button>
+                        <!-- Add other buttons here for different categories -->
+                    </div>
+                    <div id="all" class="tab-content">
+                        <div class="bg">
+                            <img width="350px" height="380px"
+                                src="Images/home/all-gallary-1.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="360px" height="380px"
+                                src="Images/home/all-gallary-2.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="370px" height="380px"
+                                src="Images/home/all-gallary-3.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img
+                                src="Images/home/all-gallary-4.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="520px" height="220px"
+                                src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="557px"
+                                src="Images/home/all-gallary-7.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                        <div class="bg1">
+                            <img src="Images/home/all-gallary-5.png"
+                                alt="gallery-img">
+                        </div>
+                    </div>
+                    <div id="design" class="tab-content" style="display: none;">
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-7.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                        <div class="bg1">
+                            <img src="Images/home/all-gallary-5.png"
+                                alt="gallery-img">
+                        </div>
+                    </div>
+
+                    <div id="development" class="tab-content"
+                        style="display: none;">
+                        <div class="bg">
+                            <img width="360px" height="380px"
+                                src="Images/home/all-gallary-2.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="370px" height="380px"
+                                src="Images/home/all-gallary-3.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="100%"
+                                src="Images/home/all-gallary-4.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img width="350px" height="380px"
+                                src="Images/home/all-gallary-1.png" alt>
+                        </div>
+                    </div>
+
+                    <div id="uiux" class="tab-content" style="display: none;">
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                        <div class="bg1">
+                            <img src="Images/home/all-gallary-5.png"
+                                alt="gallery-img">
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-7.png" alt>
+                        </div>
+                    </div>
+
+                    <div id="branding" class="tab-content" style="display: none;">
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-7.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                        <div class="bg1">
+                            <img src="Images/home/all-gallary-5.png"
+                                alt="gallery-img">
+                        </div>
+                    </div>
+
+                    <div id="marketing" class="tab-content"
+                        style="display: none;">
+                        <div class="bg">
+                            <img width="100%"
+                                src="Images/home/all-gallary-4.png" alt>
+                        </div>
+                       
+                        
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                    </div>
+
+                    <div id="seo" class="tab-content" style="display: none;">
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-1.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-6.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-7.png" alt>
+                        </div>
+                        <div class="bg">
+                            <img src="Images/home/all-gallary-8.png" alt>
+                        </div>
+                        <div class="bg1">
+                            <img src="Images/home/all-gallary-5.png"
+                                alt="gallery-img">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- services section start -->
+            <section class="services">
+
+                <div class="container-1" data-aos="fade-down">
+                    <div class="services-data" >
+                        <div class="services-title">
+                            <div class="service-flex">
+
+                                <h5>SERVICES
+                                </h5>
+                                <hr>
+                            </div>
+
+                            <h2>Services We Offer
+
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <button class="services-proj">View All Services</button>
+                    </div>
+
+                </div>
+                <hr class="bottom-hr">
+                <div class="services-container">
+                    <div class="service" data-aos="fade-down">
+                        <img class="service-img1" src="Images/icon/slider1.png"
+                            alt="UI/UX Design">
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever.
+
+                        </p> <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="service" data-aos="fade-up">
+                        <img class="service-img2" src="Images/icon/slider2.png"
+                            alt="Development">
+                        <h2>DEVELOPMENT</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever.
+
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                    <div class="service" data-aos="fade-down">
+                        <img class="service-img3" src="Images/icon/slider3.png"
+                            alt="Visual Design">
+                        <h2>Visual Design</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever.
+
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+            </section>
+            <!--Start EXPERIENCE SECTION -->
+            <section class="experience">
+                <div class="container-exp" data-aos="fade-up">
+                    <div class="experience-data">
+                        <div class="experience-title">
+                            <div class="experience-flex">
+                                <hr>
+                                <h5>EXPERIENCE
+                                </h5>
+                            </div>
+
+                            <h2>Grow Your Online Presence.
+
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <button class="btn-experience">Get Started</button>
+                    </div>
+
+                </div>
+                <hr class="bottom-hr">
+                <div class="expertise-container next-contain">
+                    <!-- <div class="next-contain"> -->
+
+                    <div class="expertise" data-aos="zoom-in">
+                        <img src="Images/home/experience.png" alt>
+                        <div class="EXPERTISE-hr">
+                            <hr class="hr-expertise">
+                            <h5>OUR EXPERTISE</h5>
+                        </div>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="expertise-item" data-aos="fade-up">
+                            <div class="flex-expertise">
+                                <div class="circle"><span>90%</span></div>
+                                <h4>Creative Approach</h4>
+                                <p>Lorem Ipsum Dolor Sit Amet, Consectetur
+                                    Adipiscing Elit, Sed Do Eiusmod Tempor
+                                    Incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="circle"><span>99%</span></div>
+                            <h4>Guaranteed Success
+                            </h4>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur
+                                Adipiscing Elit, Sed Do Eiusmod Tempor
+                                Incididunt.</p>
+                        </div>
+                        <div class="expertise-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="circle"><span>85%</span></div>
+                            <h4>Brand Strategy
+
+                            </h4>
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur
+                                Adipiscing Elit, Sed Do Eiusmod Tempor
+                                Incididunt.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- End of EXPERIENCE SECTION -->
+            <!-- start of work SECTION -->
+
+            <section class="work-section">
+                <div class="work-container">
+                    <div class="pricing-container">
+
+                        <div class="price-hr-box steps-box">
+                            <p><hr class="price-hr">PROJECT IN STEPS</p></div>
+                    </div>
+                    <div class="text-center-price work-contain" data-aos="fade-up" >
+                        <h4>HOW WE WORK
+                        </h4>
+                        <h2>Our Process For Delivering Results
+
+                        </h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry’s standard dummy text ever.
+
+                        </p>
+
+                    </div>
+                    <div class="work-hr-section">
+                        <div class="work-hr">
+
+                            <h6>PROJECT IN STEPS
+                            </h6>
+                            <!-- <hr> -->
+                        </div>
+                        <div class="work-chain">
+                            <div class="first-step" data-aos="zoom-in">
+                                <h2>01.</h2>
+                                <h4>Make An Appointment
+                                </h4>
+                            </div>
+                            <div class="scnd-step" data-aos="zoom-in">
+                                <h2>02.</h2>
+                                <h4>Meet Our Team 
+
+                                </h4>
+                            </div>
+                            <div class="thrd-step" data-aos="zoom-in">
+                                <h2>03.</h2>
+                                <h4>Get Consultation
+
+                                </h4>
+                            </div>
+
+                            <div class="frth-step" data-aos="zoom-in">
+                                <h2>04.</h2>
+                                <h4>Start Project
+
+                                </h4>
+                            </div>
+
+                        </div>
+                        <button class="work-btn" data-aos="zoom-in">Contact Now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of work SECTION -->
+
+            <!-- start of TEAM SECTION -->
+            <section class="team">
+                <div class="team-exp">
+                    <div class="team-data">
+                        <div class="team-title" data-aos="fade-up">
+                            <div class="team-flex" >
+                                <hr>
+                                <h5>OUR TEAM
+                                </h5>
+                            </div>
+
+                            <h2 class="meet-our-team">Meet Our Team of Professionals.
+
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <button class="btn-projj">All Members</button>
+                    </div>
+
+                </div>
+
+                <div class="team-slider">
+                    <div class="team-flex" data-aos="zoom-in">
+                        <div class="team-image">
+                            <img src="Images/slider/team-slider1.png" alt>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>John doe</h3>
+                                    <h4>Designer</h4>
+                                    <div class="team-social-icon">
+                                        <a href><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-image">
+                            <img src="Images/slider/team-slider2.png" alt>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Katti Pari</h3>
+                                    <h4>SEO Expertise</h4>
+                                    <div class="team-social-icon">
+                                        <a href><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-image">
+                            <img src="Images/slider/team-slider3.png" alt>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Jonny Call</h3>
+                                    <h4>Developer</h4>
+                                    <div class="team-social-icon">
+                                        <a href><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-image">
+                            <img src="Images/slider/team-slider4.png" alt>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <h3>Anni Deo</h3>
+                                    <h4>UI/UX</h4>
+                                    <div class="team-social-icon">
+                                        <a href><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                                        <a href><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="team-text" >
+                <div class="txt" data-aos="zoom-in">
+                    <h4>ASK A QUESTION TO OUR AMAZING TEAM, AND GET,
+                        RESPONSE QUICKLY.
+                    </h4>
+                    <div class="work-center">
+                        <button class="team-btn">Contact Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of TEAM SECTION -->
+            <!-- start of Pricing SECTION -->
+            <section class="pricing-section">
+                <div class="pricing-container">
+
+                    <div class="price-hr-box">
+                        <p><hr class="price-hr">PRICING PLANS</p></div>
+                </div>
+                <div class="text-center-price" data-aos="fade-down">
+                    <h4>PRICING</h4>
+                    <h2>Pricing Plans
+                    </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever.
+
+                    </p>
+
+                    <div class="pricing-table" data-aos="fade-up">
+                        <div class="plan basic">
+                            <h2 class="plan-title">BASIC</h2>
+                            <p class="plan-price">$24</p>
+                            <ul class="plan-features">
+                                <li>SEO Audits</li>
+                                <li>SEO Management</li>
+                                <li>Digital Marketing</li>
+                                <li>Site Management</li>
+                            </ul>
+                            <button class="plan-button">Get Started</button>
+                        </div>
+                        <div class="standard" data-aos="fade-down">
+                            <div class="plan standard">
+                                <h2
+                                    class="plan-title plan-standard">STANDARD</h2>
+                                <p class="plan-price">$594</p>
+                                <ul class="plan-features">
+                                    <li>SEO Audits</li>
+                                    <li>SEO Management</li>
+                                    <li>Digital Marketing</li>
+                                    <li>Site Management</li>
+                                </ul>
+                                <button id="standard-btn" class>Get
+                                    Started</button>
+                            </div>
+                        </div>
+
+                        <div class="plan premium" data-aos="fade-up">
+                            <h2 class="plan-title">PREMIUM</h2>
+                            <p class="plan-price">$99</p>
+                            <ul class="plan-features">
+                                <li>SEO Audits</li>
+                                <li>SEO Management</li>
+                                <li>Digital Marketing</li>
+                                <li>Site Management</li>
+                            </ul>
+                            <button class="plan-button">Get Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End of Pricing SECTION -->
+            <!-- start of FAQ SECTION -->
+            <section>
+                <div class="faq-section">
+                    <div class="faq">
+                        <div class="faq-hr">
+                            <div class="faq-title">
+                                <div class="faq-flex">
+                                    <hr>
+                                    <h5>FAQ
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-faq">
+                            <div class="qs" data-aos="fade-up">
+                                <h2>Frequently Asked Questions
+                                </h2>
+                                <p>Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text
+
+                                </p>
+                            </div>
+                            <div class="questions" data-aos="fade-down">
+                                <div class="quest" id="faq">
+                                    <div class="quest-item">
+                                        <h2 class="quest-head">
+                                            <button class="quest-button">
+                                                WHAT KIND OF DIGITAL SERVICES DO
+                                                YOU PROVIDE?
+                                                <img src="Images/icon/plus.png"
+                                                    alt="icon">
+                                            </button>
+
+                                        </h2>
+                                        <div class="question-collapse">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis
+                                                nostrud exercitation.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="quest-item">
+                                        <h2 class="quest-head">
+                                            <button class="quest-button">
+                                                WHAT IS YOUR PROCESS FOR WORKING
+                                                WITH CLIENTS?<img
+                                                    src="Images/icon/plus.png"
+                                                    alt="icon">
+
+                                            </button>
+
+                                        </h2>
+                                        <div class="question-collapse">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis
+                                                nostrud exercitation.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="quest-item">
+                                        <h2 class="quest-head">
+                                            <button class="quest-button">
+                                                WHAT IS YOUR TIMELINE FOR
+                                                COMPLETING A PROJECT?<img
+                                                    src="Images/icon/plus.png"
+                                                    alt="icon">
+                                            </button>
+                                        </h2>
+                                        <div class="question-collapse">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis
+                                                nostrud exercitation.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="quest-item">
+                                        <h2 class="quest-head">
+                                            <button class="quest-button">
+                                                WHAT IF I'M NOT SATISFIED WITH
+                                                THE WORK?<img
+                                                    src="Images/icon/plus.png"
+                                                    alt="icon">
+
+                                            </button>
+                                        </h2>
+                                        <div class="question-collapse">
+                                            <p>Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis
+                                                nostrud exercitation.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- END of FAQ SECTION -->
+            <!-- start of blog SECTION -->
+
+            <section class="blog">
+
+                <div class="blog-exp" data-aos="fade-down">
+                    <div class="blog-data" >
+                        <div class="blog-title" >
+                            <div class="blog-flex">
+                                <hr>
+                                <h5>BLOGS
+
+                                </h5>
+                            </div>
+
+                            <h2>Latest Posts
+
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-button">
+                        <button class="blog-btn">See All Blogs</button>
+                    </div>
+
+                </div>
+                <div class="content-container">
+                    <div class="content-item" data-aos="fade-down">
+                        <img src="Images/home/blog1.png"
+                            alt="Digital Marketing Trends">
+                        <h4>10 Must-Know Digital Marketing Trends In 2023</h4>
+                        <a href="link-to-article" class="learn-more">Learn
+                            More</a>
+                        <hr>
+                    </div>
+                    <div class="content-item" data-aos="fade-up">
+                        <img src="Images/home/blog2.png"
+                            alt="Responsive Web Design">
+                        <h4>The Importance Of Responsive Web Design For Your
+                            Business</h4>
+                        <a href="link-to-article" class="learn-more">Learn
+                            More</a>
+                        <hr>
+                    </div>
+                    <div class="content-item" data-aos="fade-down">
+                        <img src="Images/home/blog3.png"
+                            alt="Social Media Strategy">
+                        <h4>How To Create A Successful Social Media
+                            Strategy</h4>
+                        <a href="link-to-article" class="learn-more">Learn
+                            More</a>
+                        <hr>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Newsletter section -->
+            <section class="newsletter">
+                <div class="newsletter-section" data-aos="fade-left">
+                    <div class="new0hr">
+                        <h4>NEWSLETTER
+                        </h4>
+                        <hr class="hr-news">
+                    </div>
+
+                </div>
+                <div class="newsletter-section">
+                    <h3>JOIN OUR MAILING LIST</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever.</p>
+                    <form id="emailForm" action="#" method="post" data-aos="zoom-in" data-aos-delay="400">
+                        <input id="emailInput" type="email"
+                            placeholder="Enter your email" required>
+                        <button type="submit">GET STARTED</button>
+                    </form>
+
+                    <div id="successPopup" class="popup">
+                        Form submitted successfully!
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section w-footer">
+                        <a href><img src="Images/logo.png" alt></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-section faq-top">
+
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-section connected">
+                        <h3>Get Connected</h3>
+                        <p><i class="fa-solid fa-phone"></i><a class="email"
+                                href="mailto:yourname@email.com">Yourname@email.com</a></p>
+                        <p><i class="fa-regular fa-envelope"></i><a
+                                class="phone"
+                                href="tel:+123-456-7890">+123-456-7890</a></p>
+                        <p class="hour"><i
+                                class="fa-regular fa-clock"></i>Office Hours:
+                            8AM - 11PM Sunday - Weekend Day</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- copyright -->
+            <div class="copyright">
+                <h6 id="copyright-text">
+                </h6>
+                <h6>Powered By Coder Mak</h6>
+            </div>
+
+            <script>
+   
+</script>
+
+        </div>
+        <!-- Scroll animation lib -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              offset: 150,
+              duration: 1250,
+              once: true,
+          });
+      </script>
+
+        <!-- jquery js cdn -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+            integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- jquery min js cdn -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- slick carousel min js cdn -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+            integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A="
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
